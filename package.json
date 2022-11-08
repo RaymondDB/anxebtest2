@@ -1,0 +1,30 @@
+{
+  "name": "anxebtest2",
+  "version": "1.0.0",
+  "description": "\"# anxebtest2\" \r \"# anxebtest2\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Raymondhasbeenmurdered/anxebtest2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Raymondhasbeenmurdered/anxebtest2/issues"
+  },
+  "homepage": "https://github.com/Raymondhasbeenmurdered/anxebtest2#readme",
+  "dependencies": {
+    "anxeb-mongoose": "^1.0.6",
+    "anxeb-node": "^2.1.9",
+    "dotenv": "^16.0.3",
+    "md5": "^2.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}

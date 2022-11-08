@@ -1,0 +1,10 @@
+
+11:17:00 am / TestApi > Starting service api.
+11:17:00 am / TestApi > Service started successfully on http://127.0.0.1:8000.
+11:17:00 am / TestApi > Service initialization completed.
+11:17:00 am / TestApi > Connecting to data server localhost.
+
+11:17:00 am / TestApi > Exception 8001 : Connection to data server mongodb://localhost:27017/raymond failed.
+/mnt/c/Users/User/Escritorio/raymond/anxebtest2/node_modules/anxeb-mongoose/source/middleware/connection.js:62:84
+  └╴Exception 18 : Authentication failed.
+    /mnt/c/Users/User/Escritorio/raymond/anxebtest2/node_modules/mongodb/lib/cmap/connection.js:299:20

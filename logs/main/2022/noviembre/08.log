@@ -1,0 +1,10 @@
+
+⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼
+11:17:00 am / Test > Anxeb v2.1.9 / Testing v1.0.0
+11:17:00 am / Test > Running Environment: Developemnt
+
+11:17:00 am / Test > Extension Anxeb Mongoose ODM / anxeb-mongoose @ v1.0.6 successfully loaded
+
+11:17:00 am / Test > Exception 0 : Unhandled exception. [0]
+  └╴Internal Error : Cannot read properties of undefined (reading 'key')
+    /mnt/c/Users/User/Escritorio/raymond/anxebtest2/node_modules/anxeb-node/source/core/service.js:200:62
