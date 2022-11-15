@@ -15,6 +15,7 @@ module.exports ={
         type: fields.enum({ required: true }, ['admin', 'user', 'staff']),
         date: fields.number(),
         meta: fields.mixed(),
+		phone: fields.string(),
         identity: new Identity.Schema({ required: true, static: true }),
     }
         });

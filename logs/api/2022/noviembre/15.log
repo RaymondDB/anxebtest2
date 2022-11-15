@@ -14,3 +14,47 @@
 11:25:24 am / TestApi > Service initialization completed.
 11:25:24 am / TestApi > Connecting to data server localhost.
 11:25:24 am / TestApi > Successfully connected to data server.
+
+12:25:37 pm / TestApi > Starting service api.
+12:25:37 pm / TestApi > Service started successfully on http://127.0.0.1:8070.
+12:25:37 pm / TestApi > Service initialization completed.
+12:25:37 pm / TestApi > Connecting to data server localhost.
+
+12:26:07 pm / TestApi > Exception 8001 : Connection to data server mongodb://localhost:27017/test failed.
+/home/yepe/Desktop/anxebtest2/node_modules/anxeb-mongoose/source/middleware/connection.js:62:84
+  └╴Internal Error : connect ECONNREFUSED 127.0.0.1:27017
+    /home/yepe/Desktop/anxebtest2/node_modules/mongoose/lib/connection.js:847:32
+
+12:27:40 pm / TestApi > Starting service api.
+12:27:40 pm / TestApi > Service started successfully on http://127.0.0.1:8070.
+12:27:40 pm / TestApi > Service initialization completed.
+12:27:40 pm / TestApi > Connecting to data server localhost.
+12:27:40 pm / TestApi > Successfully connected to data server.
+
+12:29:00 pm / TestApi > Starting service api.
+12:29:00 pm / TestApi > Service started successfully on http://127.0.0.1:8070.
+12:29:00 pm / TestApi > Service initialization completed.
+12:29:00 pm / TestApi > Connecting to data server localhost.
+12:29:00 pm / TestApi > Successfully connected to data server.
+
+12:29:40 pm / TestApi > Starting service api.
+12:29:40 pm / TestApi > Service started successfully on http://127.0.0.1:8070.
+12:29:40 pm / TestApi > Service initialization completed.
+12:29:40 pm / TestApi > Connecting to data server localhost.
+12:29:40 pm / TestApi > Successfully connected to data server.
+
+12:30:35 pm / TestApi > Starting service api.
+12:30:35 pm / TestApi > Service started successfully on http://127.0.0.1:8070.
+12:30:35 pm / TestApi > Service initialization completed.
+12:30:35 pm / TestApi > Connecting to data server localhost.
+12:30:35 pm / TestApi > Successfully connected to data server.
+12:30:45 pm / TestApi > Exception 404 : Recurso en URL /login no encontrado.
+/home/yepe/Desktop/anxebtest2/node_modules/anxeb-node/source/middleware/routing.js:198:71
+12:31:21 pm / TestApi > Exception 404 : Recurso en URL / no encontrado.
+/home/yepe/Desktop/anxebtest2/node_modules/anxeb-node/source/middleware/routing.js:198:71
+12:32:15 pm / TestApi > Exception 404 : Recurso en URL / no encontrado.
+/home/yepe/Desktop/anxebtest2/node_modules/anxeb-node/source/middleware/routing.js:198:71
+12:32:19 pm / TestApi > Exception 404 : Recurso en URL / no encontrado.
+/home/yepe/Desktop/anxebtest2/node_modules/anxeb-node/source/middleware/routing.js:198:71
+12:32:25 pm / TestApi > Exception 404 : Recurso en URL / no encontrado.
+/home/yepe/Desktop/anxebtest2/node_modules/anxeb-node/source/middleware/routing.js:198:71

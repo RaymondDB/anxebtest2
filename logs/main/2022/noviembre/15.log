@@ -32,3 +32,49 @@
 
 11:25:24 am / Test > Anxeb server initialized on martes 15/11/2022 at 11:25:24 am.
 
+
+⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼
+12:25:37 pm / Test > Anxeb v2.1.9 / Testing v1.0.0
+12:25:37 pm / Test > Running Environment: Developemnt
+
+12:25:37 pm / Test > Extension Anxeb Mongoose ODM / anxeb-mongoose @ v1.0.6 successfully loaded
+
+12:26:07 pm / Test > Exception 0 : Unhandled exception. [0]
+  └╴Internal Error : Cannot read properties of undefined (reading 'key')
+    /home/yepe/Desktop/anxebtest2/node_modules/anxeb-node/source/core/service.js:200:62
+
+⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼
+12:27:40 pm / Test > Anxeb v2.1.9 / Testing v1.0.0
+12:27:40 pm / Test > Running Environment: Developemnt
+
+12:27:40 pm / Test > Extension Anxeb Mongoose ODM / anxeb-mongoose @ v1.0.6 successfully loaded
+
+12:27:40 pm / Test > Anxeb server initialized on martes 15/11/2022 at 12:27:40 pm.
+
+
+⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼
+12:29:00 pm / Test > Anxeb v2.1.9 / Testing v1.0.0
+12:29:00 pm / Test > Running Environment: Developemnt
+
+12:29:00 pm / Test > Extension Anxeb Mongoose ODM / anxeb-mongoose @ v1.0.6 successfully loaded
+
+12:29:00 pm / Test > Anxeb server initialized on martes 15/11/2022 at 12:29:00 pm.
+
+
+⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼
+12:29:40 pm / Test > Anxeb v2.1.9 / Testing v1.0.0
+12:29:40 pm / Test > Running Environment: Developemnt
+
+12:29:40 pm / Test > Extension Anxeb Mongoose ODM / anxeb-mongoose @ v1.0.6 successfully loaded
+
+12:29:40 pm / Test > Anxeb server initialized on martes 15/11/2022 at 12:29:40 pm.
+
+
+⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼
+12:30:35 pm / Test > Anxeb v2.1.9 / Testing v1.0.0
+12:30:35 pm / Test > Running Environment: Developemnt
+
+12:30:35 pm / Test > Extension Anxeb Mongoose ODM / anxeb-mongoose @ v1.0.6 successfully loaded
+
+12:30:35 pm / Test > Anxeb server initialized on martes 15/11/2022 at 12:30:35 pm.
+
