@@ -24,7 +24,7 @@ let server = new Server({
 		services : '/services',
 		source   : '/source',
 		logs     : '/logs',
-	//	keys     : '/keys',
+		keys     : '/keys',
 		storage  : '/storage',
 		configs  : '/configs'
 	},
