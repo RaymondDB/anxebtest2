@@ -1,0 +1,34 @@
+
+⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼
+11:22:31 am / Test > Anxeb v2.1.9 / Testing v1.0.0
+11:22:31 am / Test > Running Environment: Developemnt
+
+
+11:22:31 am / Test > Exception 6 : Extension mongoose initialization failed.
+/home/yepe/Desktop/anxebtest2/index.js:6:14
+  └╴Exception 5 : Error loading api models modules.
+    /home/yepe/Desktop/anxebtest2/node_modules/anxeb-node/source/core/service.js:51:75
+
+    └╴MODULE_NOT_FOUND : Cannot find module '../schemas/primary/user
+      /home/yepe/Desktop/anxebtest2/source/api/models/user.js:3:14
+
+11:22:31 am / Test > Anxeb server initialized on martes 15/11/2022 at 11:22:31 am.
+
+
+⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼
+11:23:44 am / Test > Anxeb v2.1.9 / Testing v1.0.0
+11:23:44 am / Test > Running Environment: Developemnt
+
+11:23:44 am / Test > Extension Anxeb Mongoose ODM / anxeb-mongoose @ v1.0.6 successfully loaded
+
+11:23:44 am / Test > Anxeb server initialized on martes 15/11/2022 at 11:23:44 am.
+
+
+⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼⎼
+11:25:24 am / Test > Anxeb v2.1.9 / Testing v1.0.0
+11:25:24 am / Test > Running Environment: Developemnt
+
+11:25:24 am / Test > Extension Anxeb Mongoose ODM / anxeb-mongoose @ v1.0.6 successfully loaded
+
+11:25:24 am / Test > Anxeb server initialized on martes 15/11/2022 at 11:25:24 am.
+

@@ -7,7 +7,11 @@ module.exports = {
 	timeout : 60000,
 	methods : {
 		get : function (context) {
-			context.send("<span style='font-family: Verdana'><b>" + context.service.name + " " + context.service.version + "</b><br>build " + context.service.server.version + "</span>");
+			context.send({
+				msg: 'Hello World',
+				version: '1.0.0',				
+				version : anxeb.version
+			});
 		}
 	}
 };

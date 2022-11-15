@@ -1,0 +1,16 @@
+
+11:22:31 am / TestApi > Starting service api.
+11:22:31 am / TestApi > Service started successfully on http://127.0.0.1:8070.
+11:22:31 am / TestApi > Service initialization completed.
+
+11:23:44 am / TestApi > Starting service api.
+11:23:44 am / TestApi > Service started successfully on http://127.0.0.1:8070.
+11:23:44 am / TestApi > Service initialization completed.
+11:23:44 am / TestApi > Connecting to data server localhost.
+11:23:44 am / TestApi > Successfully connected to data server.
+
+11:25:24 am / TestApi > Starting service api.
+11:25:24 am / TestApi > Service started successfully on http://127.0.0.1:8070.
+11:25:24 am / TestApi > Service initialization completed.
+11:25:24 am / TestApi > Connecting to data server localhost.
+11:25:24 am / TestApi > Successfully connected to data server.
