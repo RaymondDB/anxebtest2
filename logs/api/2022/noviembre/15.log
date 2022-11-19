@@ -58,3 +58,254 @@
 /home/yepe/Desktop/anxebtest2/node_modules/anxeb-node/source/middleware/routing.js:198:71
 12:32:25 pm / TestApi > Exception 404 : Recurso en URL / no encontrado.
 /home/yepe/Desktop/anxebtest2/node_modules/anxeb-node/source/middleware/routing.js:198:71
+
+01:10:54 pm / TestApi > Starting service api.
+01:10:54 pm / TestApi > Service started successfully on http://127.0.0.1:8070.
+01:10:54 pm / TestApi > Service initialization completed.
+01:10:54 pm / TestApi > Connecting to data server localhost.
+01:10:54 pm / TestApi > Successfully connected to data server.
+01:11:16 pm / TestApi > Exception 401 : Acceso no autorizado a /users usando método GET.
+/home/yepe/Desktop/anxebtest2/node_modules/anxeb-node/source/middleware/security.js:183:20
+01:11:30 pm / TestApi > Exception 401 : Acceso no autorizado a /users usando método POST.
+/home/yepe/Desktop/anxebtest2/node_modules/anxeb-node/source/middleware/security.js:183:20
+01:11:34 pm / TestApi > Exception 401 : Acceso no autorizado a /users usando método GET.
+/home/yepe/Desktop/anxebtest2/node_modules/anxeb-node/source/middleware/security.js:183:20
+01:11:47 pm / TestApi > Exception 401 : Acceso no autorizado a /users usando método GET.
+/home/yepe/Desktop/anxebtest2/node_modules/anxeb-node/source/middleware/security.js:183:20
+01:12:44 pm / TestApi > Exception 401 : Acceso no autorizado a /users usando método GET.
+/home/yepe/Desktop/anxebtest2/node_modules/anxeb-node/source/middleware/security.js:183:20
+01:13:10 pm / TestApi > Exception 401 : Acceso no autorizado a /users usando método GET.
+/home/yepe/Desktop/anxebtest2/node_modules/anxeb-node/source/middleware/security.js:183:20
+01:13:59 pm / TestApi > Exception 404 : Recurso en URL /post no encontrado.
+/home/yepe/Desktop/anxebtest2/node_modules/anxeb-node/source/middleware/routing.js:198:71
+01:14:07 pm / TestApi > Exception 404 : Recurso en URL /auth no encontrado.
+/home/yepe/Desktop/anxebtest2/node_modules/anxeb-node/source/middleware/routing.js:198:71
+01:14:13 pm / TestApi > Exception 404 : Recurso en URL /auth no encontrado.
+/home/yepe/Desktop/anxebtest2/node_modules/anxeb-node/source/middleware/routing.js:198:71
+01:14:16 pm / TestApi > Exception 404 : Recurso en URL /auth no encontrado.
+/home/yepe/Desktop/anxebtest2/node_modules/anxeb-node/source/middleware/routing.js:198:71
+
+02:39:06 pm / TestApi > Starting service api.
+02:39:06 pm / TestApi > Service started successfully on http://127.0.0.1:8070.
+02:39:06 pm / TestApi > Service initialization completed.
+02:39:06 pm / TestApi > Connecting to data server localhost.
+02:39:06 pm / TestApi > Successfully connected to data server.
+02:39:43 pm / TestApi > Exception 404 : Recurso en URL /auth no encontrado.
+/home/yepe/Desktop/anxebtest2/node_modules/anxeb-node/source/middleware/routing.js:198:71
+02:39:44 pm / TestApi > Exception 404 : Recurso en URL /auth no encontrado.
+/home/yepe/Desktop/anxebtest2/node_modules/anxeb-node/source/middleware/routing.js:198:71
+02:39:49 pm / TestApi > Exception 404 : Recurso en URL / no encontrado.
+/home/yepe/Desktop/anxebtest2/node_modules/anxeb-node/source/middleware/routing.js:198:71
+
+02:41:16 pm / TestApi > Starting service api.
+02:41:16 pm / TestApi > Service started successfully on http://127.0.0.1:8070.
+02:41:16 pm / TestApi > Service initialization completed.
+02:41:16 pm / TestApi > Connecting to data server localhost.
+02:41:16 pm / TestApi > Successfully connected to data server.
+02:41:22 pm / TestApi > Exception 404 : Recurso en URL / no encontrado.
+/home/yepe/Desktop/anxebtest2/node_modules/anxeb-node/source/middleware/routing.js:198:71
+02:41:24 pm / TestApi > Exception 404 : Recurso en URL / no encontrado.
+/home/yepe/Desktop/anxebtest2/node_modules/anxeb-node/source/middleware/routing.js:198:71
+02:41:34 pm / TestApi > Exception 404 : Recurso en URL /auth/login no encontrado.
+/home/yepe/Desktop/anxebtest2/node_modules/anxeb-node/source/middleware/routing.js:198:71
+02:41:48 pm / TestApi > Exception 404 : Recurso en URL /auth/ no encontrado.
+/home/yepe/Desktop/anxebtest2/node_modules/anxeb-node/source/middleware/routing.js:198:71
+02:41:49 pm / TestApi > Exception 404 : Recurso en URL /auth/ no encontrado.
+/home/yepe/Desktop/anxebtest2/node_modules/anxeb-node/source/middleware/routing.js:198:71
+02:41:51 pm / TestApi > Exception 404 : Recurso en URL / no encontrado.
+/home/yepe/Desktop/anxebtest2/node_modules/anxeb-node/source/middleware/routing.js:198:71
+02:42:00 pm / TestApi > Exception 404 : Recurso en URL / no encontrado.
+/home/yepe/Desktop/anxebtest2/node_modules/anxeb-node/source/middleware/routing.js:198:71
+03:02:49 pm / TestApi > Exception 404 : Recurso en URL /auth/login no encontrado.
+/home/yepe/Desktop/anxebtest2/node_modules/anxeb-node/source/middleware/routing.js:198:71
+
+03:02:59 pm / TestApi > Starting service api.
+03:02:59 pm / TestApi > Service started successfully on http://127.0.0.1:8070.
+03:02:59 pm / TestApi > Service initialization completed.
+03:02:59 pm / TestApi > Connecting to data server localhost.
+03:02:59 pm / TestApi > Successfully connected to data server.
+03:03:22 pm / TestApi > Exception 404 : Recurso en URL /auth/login no encontrado.
+/home/yepe/Desktop/anxebtest2/node_modules/anxeb-node/source/middleware/routing.js:198:71
+03:03:23 pm / TestApi > Exception 404 : Recurso en URL /auth/login no encontrado.
+/home/yepe/Desktop/anxebtest2/node_modules/anxeb-node/source/middleware/routing.js:198:71
+03:08:17 pm / TestApi > Exception 404 : Recurso en URL /auth/login no encontrado.
+/home/yepe/Desktop/anxebtest2/node_modules/anxeb-node/source/middleware/routing.js:198:71
+03:08:24 pm / TestApi > Exception 404 : Recurso en URL /auth/ no encontrado.
+/home/yepe/Desktop/anxebtest2/node_modules/anxeb-node/source/middleware/routing.js:198:71
+03:08:27 pm / TestApi > Exception 404 : Recurso en URL /auth no encontrado.
+/home/yepe/Desktop/anxebtest2/node_modules/anxeb-node/source/middleware/routing.js:198:71
+03:08:44 pm / TestApi > Exception 404 : Recurso en URL /auth/login no encontrado.
+/home/yepe/Desktop/anxebtest2/node_modules/anxeb-node/source/middleware/routing.js:198:71
+
+03:38:50 pm / TestApi > Starting service api.
+03:38:50 pm / TestApi > Service started successfully on http://127.0.0.1:8070.
+03:38:50 pm / TestApi > Service initialization completed.
+03:38:50 pm / TestApi > Connecting to data server localhost.
+03:38:50 pm / TestApi > Successfully connected to data server.
+
+03:39:02 pm / TestApi > Exception 8004 : Error procesado datos. not authorized on test to execute command { find: "Users", filter: { login.email: "Jhonmiguely3@gmail.com" }, projection: {}, limit: 1, singleBatch: true, batchSize: 1, lsid: { id: UUID("63ae33f1-8d1c-4c12-9683-be28808314ba") }, $db: "test" }
+/home/yepe/Desktop/anxebtest2/node_modules/anxeb-mongoose/source/middleware/data.js:130:58
+  └╴Exception 13 : not authorized on test to execute command { find: "Users", filter: { login.email: "Jhonmiguely3@gmail.com" }, projection: {}, limit: 1, singleBatch: true, batchSize: 1, lsid: { id: UUID("63ae33f1-8d1c-4c12-9683-be28808314ba") }, $db: "test" }
+    /home/yepe/Desktop/anxebtest2/node_modules/mongodb/lib/cmap/connection.js:299:20
+
+03:39:47 pm / TestApi > Exception 8004 : Error procesado datos. not authorized on test to execute command { find: "Users", filter: { login.email: "Jhonmiguely3@gmail.com" }, projection: {}, limit: 1, singleBatch: true, batchSize: 1, lsid: { id: UUID("63ae33f1-8d1c-4c12-9683-be28808314ba") }, $db: "test" }
+/home/yepe/Desktop/anxebtest2/node_modules/anxeb-mongoose/source/middleware/data.js:130:58
+  └╴Exception 13 : not authorized on test to execute command { find: "Users", filter: { login.email: "Jhonmiguely3@gmail.com" }, projection: {}, limit: 1, singleBatch: true, batchSize: 1, lsid: { id: UUID("63ae33f1-8d1c-4c12-9683-be28808314ba") }, $db: "test" }
+    /home/yepe/Desktop/anxebtest2/node_modules/mongodb/lib/cmap/connection.js:299:20
+
+03:39:48 pm / TestApi > Exception 8004 : Error procesado datos. not authorized on test to execute command { find: "Users", filter: { login.email: "Jhonmiguely3@gmail.com" }, projection: {}, limit: 1, singleBatch: true, batchSize: 1, lsid: { id: UUID("63ae33f1-8d1c-4c12-9683-be28808314ba") }, $db: "test" }
+/home/yepe/Desktop/anxebtest2/node_modules/anxeb-mongoose/source/middleware/data.js:130:58
+  └╴Exception 13 : not authorized on test to execute command { find: "Users", filter: { login.email: "Jhonmiguely3@gmail.com" }, projection: {}, limit: 1, singleBatch: true, batchSize: 1, lsid: { id: UUID("63ae33f1-8d1c-4c12-9683-be28808314ba") }, $db: "test" }
+    /home/yepe/Desktop/anxebtest2/node_modules/mongodb/lib/cmap/connection.js:299:20
+
+03:40:35 pm / TestApi > Exception 8004 : Error procesado datos. not authorized on test to execute command { find: "Users", filter: { login.email: "Jhonmiguely3@gmail.com" }, projection: {}, limit: 1, singleBatch: true, batchSize: 1, lsid: { id: UUID("63ae33f1-8d1c-4c12-9683-be28808314ba") }, $db: "test" }
+/home/yepe/Desktop/anxebtest2/node_modules/anxeb-mongoose/source/middleware/data.js:130:58
+  └╴Exception 13 : not authorized on test to execute command { find: "Users", filter: { login.email: "Jhonmiguely3@gmail.com" }, projection: {}, limit: 1, singleBatch: true, batchSize: 1, lsid: { id: UUID("63ae33f1-8d1c-4c12-9683-be28808314ba") }, $db: "test" }
+    /home/yepe/Desktop/anxebtest2/node_modules/mongodb/lib/cmap/connection.js:299:20
+
+03:40:55 pm / TestApi > Starting service api.
+03:40:55 pm / TestApi > Service started successfully on http://127.0.0.1:8070.
+03:40:55 pm / TestApi > Service initialization completed.
+03:40:55 pm / TestApi > Connecting to data server localhost.
+03:40:55 pm / TestApi > Successfully connected to data server.
+
+03:40:59 pm / TestApi > Exception 8004 : Error procesado datos. not authorized on test to execute command { find: "Users", filter: { login.email: "Jhonmiguely3@gmail.com" }, projection: {}, limit: 1, singleBatch: true, batchSize: 1, lsid: { id: UUID("b4aee919-080c-409c-bd84-fb9c590e5c5f") }, $db: "test" }
+/home/yepe/Desktop/anxebtest2/node_modules/anxeb-mongoose/source/middleware/data.js:130:58
+  └╴Exception 13 : not authorized on test to execute command { find: "Users", filter: { login.email: "Jhonmiguely3@gmail.com" }, projection: {}, limit: 1, singleBatch: true, batchSize: 1, lsid: { id: UUID("b4aee919-080c-409c-bd84-fb9c590e5c5f") }, $db: "test" }
+    /home/yepe/Desktop/anxebtest2/node_modules/mongodb/lib/cmap/connection.js:299:20
+
+03:41:08 pm / TestApi > Exception 8004 : Error procesado datos. not authorized on test to execute command { find: "Users", filter: { login.email: "Jhonmiguely3@gmail.com" }, projection: {}, limit: 1, singleBatch: true, batchSize: 1, lsid: { id: UUID("b4aee919-080c-409c-bd84-fb9c590e5c5f") }, $db: "test" }
+/home/yepe/Desktop/anxebtest2/node_modules/anxeb-mongoose/source/middleware/data.js:130:58
+  └╴Exception 13 : not authorized on test to execute command { find: "Users", filter: { login.email: "Jhonmiguely3@gmail.com" }, projection: {}, limit: 1, singleBatch: true, batchSize: 1, lsid: { id: UUID("b4aee919-080c-409c-bd84-fb9c590e5c5f") }, $db: "test" }
+    /home/yepe/Desktop/anxebtest2/node_modules/mongodb/lib/cmap/connection.js:299:20
+03:41:31 pm / TestApi > Exception 404 : Recurso en URL /login no encontrado.
+/home/yepe/Desktop/anxebtest2/node_modules/anxeb-node/source/middleware/routing.js:198:71
+
+03:47:54 pm / TestApi > Starting service api.
+03:47:54 pm / TestApi > Service started successfully on http://127.0.0.1:8070.
+03:47:54 pm / TestApi > Service initialization completed.
+03:47:54 pm / TestApi > Connecting to data server localhost.
+03:47:54 pm / TestApi > Successfully connected to data server.
+
+03:48:06 pm / TestApi > Starting service api.
+03:48:06 pm / TestApi > Service started successfully on http://127.0.0.1:8070.
+03:48:06 pm / TestApi > Service initialization completed.
+03:48:06 pm / TestApi > Connecting to data server localhost.
+03:48:06 pm / TestApi > Successfully connected to data server.
+03:48:10 pm / TestApi > Exception 404 : Recurso en URL /login no encontrado.
+/home/yepe/Desktop/anxebtest2/node_modules/anxeb-node/source/middleware/routing.js:198:71
+
+03:48:20 pm / TestApi > Exception 8004 : Error procesado datos. not authorized on test to execute command { find: "Users", filter: { login.email: "Jhonmiguely3@gmail.com" }, projection: {}, limit: 1, singleBatch: true, batchSize: 1, lsid: { id: UUID("971a12bd-191d-48e1-941a-3138fc60af03") }, $db: "test" }
+/home/yepe/Desktop/anxebtest2/node_modules/anxeb-mongoose/source/middleware/data.js:130:58
+  └╴Exception 13 : not authorized on test to execute command { find: "Users", filter: { login.email: "Jhonmiguely3@gmail.com" }, projection: {}, limit: 1, singleBatch: true, batchSize: 1, lsid: { id: UUID("971a12bd-191d-48e1-941a-3138fc60af03") }, $db: "test" }
+    /home/yepe/Desktop/anxebtest2/node_modules/mongodb/lib/cmap/connection.js:299:20
+
+03:49:20 pm / TestApi > Starting service api.
+03:49:20 pm / TestApi > Service started successfully on http://127.0.0.1:8070.
+03:49:20 pm / TestApi > Service initialization completed.
+03:49:20 pm / TestApi > Connecting to data server localhost.
+03:49:20 pm / TestApi > Successfully connected to data server.
+
+03:51:42 pm / TestApi > Starting service api.
+03:51:42 pm / TestApi > Service started successfully on http://127.0.0.1:8070.
+03:51:42 pm / TestApi > Service initialization completed.
+03:51:42 pm / TestApi > Connecting to data server localhost.
+03:51:42 pm / TestApi > Successfully connected to data server.
+
+03:52:19 pm / TestApi > Exception 8004 : Error procesado datos. not authorized on test to execute command { find: "Users", filter: { login.email: "Jhonmiguely3@gmail.com" }, projection: {}, limit: 1, singleBatch: true, batchSize: 1, lsid: { id: UUID("fc271a6b-696b-4034-86e0-5a2b27adf349") }, $db: "test" }
+/home/yepe/Desktop/anxebtest2/node_modules/anxeb-mongoose/source/middleware/data.js:130:58
+  └╴Exception 13 : not authorized on test to execute command { find: "Users", filter: { login.email: "Jhonmiguely3@gmail.com" }, projection: {}, limit: 1, singleBatch: true, batchSize: 1, lsid: { id: UUID("fc271a6b-696b-4034-86e0-5a2b27adf349") }, $db: "test" }
+    /home/yepe/Desktop/anxebtest2/node_modules/mongodb/lib/cmap/connection.js:299:20
+
+04:03:33 pm / TestApi > Starting service api.
+04:03:33 pm / TestApi > Service started successfully on http://127.0.0.1:8070.
+04:03:33 pm / TestApi > Service initialization completed.
+04:03:33 pm / TestApi > Connecting to data server localhost.
+04:03:33 pm / TestApi > Successfully connected to data server.
+
+04:03:41 pm / TestApi > Exception 8004 : Error procesado datos. not authorized on test to execute command { find: "Users", filter: { login.email: "Jhonmiguely3@gmail.com" }, projection: {}, limit: 1, singleBatch: true, batchSize: 1, lsid: { id: UUID("7fd82e77-2033-4544-96ab-a955ac145280") }, $db: "test" }
+/home/yepe/Desktop/anxebtest2/node_modules/anxeb-mongoose/source/middleware/data.js:130:58
+  └╴Exception 13 : not authorized on test to execute command { find: "Users", filter: { login.email: "Jhonmiguely3@gmail.com" }, projection: {}, limit: 1, singleBatch: true, batchSize: 1, lsid: { id: UUID("7fd82e77-2033-4544-96ab-a955ac145280") }, $db: "test" }
+    /home/yepe/Desktop/anxebtest2/node_modules/mongodb/lib/cmap/connection.js:299:20
+
+04:04:48 pm / TestApi > Starting service api.
+04:04:48 pm / TestApi > Service started successfully on http://127.0.0.1:8070.
+04:04:48 pm / TestApi > Service initialization completed.
+04:04:48 pm / TestApi > Connecting to data server localhost.
+04:04:48 pm / TestApi > Successfully connected to data server.
+
+04:05:00 pm / TestApi > Starting service api.
+04:05:00 pm / TestApi > Service started successfully on http://127.0.0.1:8070.
+04:05:00 pm / TestApi > Service initialization completed.
+04:05:00 pm / TestApi > Connecting to data server localhost.
+04:05:00 pm / TestApi > Successfully connected to data server.
+
+04:05:03 pm / TestApi > Exception 8004 : Error procesado datos. not authorized on test to execute command { find: "Users", filter: { login.email: "Jhonmiguely3@gmail.com" }, projection: {}, limit: 1, singleBatch: true, batchSize: 1, lsid: { id: UUID("3cb77397-16c3-4d93-8bdc-9cefdfa8dfc8") }, $db: "test" }
+/home/yepe/Desktop/anxebtest2/node_modules/anxeb-mongoose/source/middleware/data.js:130:58
+  └╴Exception 13 : not authorized on test to execute command { find: "Users", filter: { login.email: "Jhonmiguely3@gmail.com" }, projection: {}, limit: 1, singleBatch: true, batchSize: 1, lsid: { id: UUID("3cb77397-16c3-4d93-8bdc-9cefdfa8dfc8") }, $db: "test" }
+    /home/yepe/Desktop/anxebtest2/node_modules/mongodb/lib/cmap/connection.js:299:20
+
+04:05:04 pm / TestApi > Exception 8004 : Error procesado datos. not authorized on test to execute command { find: "Users", filter: { login.email: "Jhonmiguely3@gmail.com" }, projection: {}, limit: 1, singleBatch: true, batchSize: 1, lsid: { id: UUID("3cb77397-16c3-4d93-8bdc-9cefdfa8dfc8") }, $db: "test" }
+/home/yepe/Desktop/anxebtest2/node_modules/anxeb-mongoose/source/middleware/data.js:130:58
+  └╴Exception 13 : not authorized on test to execute command { find: "Users", filter: { login.email: "Jhonmiguely3@gmail.com" }, projection: {}, limit: 1, singleBatch: true, batchSize: 1, lsid: { id: UUID("3cb77397-16c3-4d93-8bdc-9cefdfa8dfc8") }, $db: "test" }
+    /home/yepe/Desktop/anxebtest2/node_modules/mongodb/lib/cmap/connection.js:299:20
+
+04:05:05 pm / TestApi > Exception 8004 : Error procesado datos. not authorized on test to execute command { find: "Users", filter: { login.email: "Jhonmiguely3@gmail.com" }, projection: {}, limit: 1, singleBatch: true, batchSize: 1, lsid: { id: UUID("3cb77397-16c3-4d93-8bdc-9cefdfa8dfc8") }, $db: "test" }
+/home/yepe/Desktop/anxebtest2/node_modules/anxeb-mongoose/source/middleware/data.js:130:58
+  └╴Exception 13 : not authorized on test to execute command { find: "Users", filter: { login.email: "Jhonmiguely3@gmail.com" }, projection: {}, limit: 1, singleBatch: true, batchSize: 1, lsid: { id: UUID("3cb77397-16c3-4d93-8bdc-9cefdfa8dfc8") }, $db: "test" }
+    /home/yepe/Desktop/anxebtest2/node_modules/mongodb/lib/cmap/connection.js:299:20
+
+04:05:05 pm / TestApi > Exception 8004 : Error procesado datos. not authorized on test to execute command { find: "Users", filter: { login.email: "Jhonmiguely3@gmail.com" }, projection: {}, limit: 1, singleBatch: true, batchSize: 1, lsid: { id: UUID("3cb77397-16c3-4d93-8bdc-9cefdfa8dfc8") }, $db: "test" }
+/home/yepe/Desktop/anxebtest2/node_modules/anxeb-mongoose/source/middleware/data.js:130:58
+  └╴Exception 13 : not authorized on test to execute command { find: "Users", filter: { login.email: "Jhonmiguely3@gmail.com" }, projection: {}, limit: 1, singleBatch: true, batchSize: 1, lsid: { id: UUID("3cb77397-16c3-4d93-8bdc-9cefdfa8dfc8") }, $db: "test" }
+    /home/yepe/Desktop/anxebtest2/node_modules/mongodb/lib/cmap/connection.js:299:20
+
+04:05:05 pm / TestApi > Exception 8004 : Error procesado datos. not authorized on test to execute command { find: "Users", filter: { login.email: "Jhonmiguely3@gmail.com" }, projection: {}, limit: 1, singleBatch: true, batchSize: 1, lsid: { id: UUID("3cb77397-16c3-4d93-8bdc-9cefdfa8dfc8") }, $db: "test" }
+/home/yepe/Desktop/anxebtest2/node_modules/anxeb-mongoose/source/middleware/data.js:130:58
+  └╴Exception 13 : not authorized on test to execute command { find: "Users", filter: { login.email: "Jhonmiguely3@gmail.com" }, projection: {}, limit: 1, singleBatch: true, batchSize: 1, lsid: { id: UUID("3cb77397-16c3-4d93-8bdc-9cefdfa8dfc8") }, $db: "test" }
+    /home/yepe/Desktop/anxebtest2/node_modules/mongodb/lib/cmap/connection.js:299:20
+
+04:05:06 pm / TestApi > Exception 8004 : Error procesado datos. not authorized on test to execute command { find: "Users", filter: { login.email: "Jhonmiguely3@gmail.com" }, projection: {}, limit: 1, singleBatch: true, batchSize: 1, lsid: { id: UUID("3cb77397-16c3-4d93-8bdc-9cefdfa8dfc8") }, $db: "test" }
+/home/yepe/Desktop/anxebtest2/node_modules/anxeb-mongoose/source/middleware/data.js:130:58
+  └╴Exception 13 : not authorized on test to execute command { find: "Users", filter: { login.email: "Jhonmiguely3@gmail.com" }, projection: {}, limit: 1, singleBatch: true, batchSize: 1, lsid: { id: UUID("3cb77397-16c3-4d93-8bdc-9cefdfa8dfc8") }, $db: "test" }
+    /home/yepe/Desktop/anxebtest2/node_modules/mongodb/lib/cmap/connection.js:299:20
+
+04:05:06 pm / TestApi > Exception 8004 : Error procesado datos. not authorized on test to execute command { find: "Users", filter: { login.email: "Jhonmiguely3@gmail.com" }, projection: {}, limit: 1, singleBatch: true, batchSize: 1, lsid: { id: UUID("3cb77397-16c3-4d93-8bdc-9cefdfa8dfc8") }, $db: "test" }
+/home/yepe/Desktop/anxebtest2/node_modules/anxeb-mongoose/source/middleware/data.js:130:58
+  └╴Exception 13 : not authorized on test to execute command { find: "Users", filter: { login.email: "Jhonmiguely3@gmail.com" }, projection: {}, limit: 1, singleBatch: true, batchSize: 1, lsid: { id: UUID("3cb77397-16c3-4d93-8bdc-9cefdfa8dfc8") }, $db: "test" }
+    /home/yepe/Desktop/anxebtest2/node_modules/mongodb/lib/cmap/connection.js:299:20
+
+04:05:06 pm / TestApi > Exception 8004 : Error procesado datos. not authorized on test to execute command { find: "Users", filter: { login.email: "Jhonmiguely3@gmail.com" }, projection: {}, limit: 1, singleBatch: true, batchSize: 1, lsid: { id: UUID("3cb77397-16c3-4d93-8bdc-9cefdfa8dfc8") }, $db: "test" }
+/home/yepe/Desktop/anxebtest2/node_modules/anxeb-mongoose/source/middleware/data.js:130:58
+  └╴Exception 13 : not authorized on test to execute command { find: "Users", filter: { login.email: "Jhonmiguely3@gmail.com" }, projection: {}, limit: 1, singleBatch: true, batchSize: 1, lsid: { id: UUID("3cb77397-16c3-4d93-8bdc-9cefdfa8dfc8") }, $db: "test" }
+    /home/yepe/Desktop/anxebtest2/node_modules/mongodb/lib/cmap/connection.js:299:20
+
+04:05:06 pm / TestApi > Exception 8004 : Error procesado datos. not authorized on test to execute command { find: "Users", filter: { login.email: "Jhonmiguely3@gmail.com" }, projection: {}, limit: 1, singleBatch: true, batchSize: 1, lsid: { id: UUID("3cb77397-16c3-4d93-8bdc-9cefdfa8dfc8") }, $db: "test" }
+/home/yepe/Desktop/anxebtest2/node_modules/anxeb-mongoose/source/middleware/data.js:130:58
+  └╴Exception 13 : not authorized on test to execute command { find: "Users", filter: { login.email: "Jhonmiguely3@gmail.com" }, projection: {}, limit: 1, singleBatch: true, batchSize: 1, lsid: { id: UUID("3cb77397-16c3-4d93-8bdc-9cefdfa8dfc8") }, $db: "test" }
+    /home/yepe/Desktop/anxebtest2/node_modules/mongodb/lib/cmap/connection.js:299:20
+
+04:05:06 pm / TestApi > Exception 8004 : Error procesado datos. not authorized on test to execute command { find: "Users", filter: { login.email: "Jhonmiguely3@gmail.com" }, projection: {}, limit: 1, singleBatch: true, batchSize: 1, lsid: { id: UUID("3cb77397-16c3-4d93-8bdc-9cefdfa8dfc8") }, $db: "test" }
+/home/yepe/Desktop/anxebtest2/node_modules/anxeb-mongoose/source/middleware/data.js:130:58
+  └╴Exception 13 : not authorized on test to execute command { find: "Users", filter: { login.email: "Jhonmiguely3@gmail.com" }, projection: {}, limit: 1, singleBatch: true, batchSize: 1, lsid: { id: UUID("3cb77397-16c3-4d93-8bdc-9cefdfa8dfc8") }, $db: "test" }
+    /home/yepe/Desktop/anxebtest2/node_modules/mongodb/lib/cmap/connection.js:299:20
+
+04:05:06 pm / TestApi > Exception 8004 : Error procesado datos. not authorized on test to execute command { find: "Users", filter: { login.email: "Jhonmiguely3@gmail.com" }, projection: {}, limit: 1, singleBatch: true, batchSize: 1, lsid: { id: UUID("3cb77397-16c3-4d93-8bdc-9cefdfa8dfc8") }, $db: "test" }
+/home/yepe/Desktop/anxebtest2/node_modules/anxeb-mongoose/source/middleware/data.js:130:58
+  └╴Exception 13 : not authorized on test to execute command { find: "Users", filter: { login.email: "Jhonmiguely3@gmail.com" }, projection: {}, limit: 1, singleBatch: true, batchSize: 1, lsid: { id: UUID("3cb77397-16c3-4d93-8bdc-9cefdfa8dfc8") }, $db: "test" }
+    /home/yepe/Desktop/anxebtest2/node_modules/mongodb/lib/cmap/connection.js:299:20
+
+04:05:07 pm / TestApi > Exception 8004 : Error procesado datos. not authorized on test to execute command { find: "Users", filter: { login.email: "Jhonmiguely3@gmail.com" }, projection: {}, limit: 1, singleBatch: true, batchSize: 1, lsid: { id: UUID("3cb77397-16c3-4d93-8bdc-9cefdfa8dfc8") }, $db: "test" }
+/home/yepe/Desktop/anxebtest2/node_modules/anxeb-mongoose/source/middleware/data.js:130:58
+  └╴Exception 13 : not authorized on test to execute command { find: "Users", filter: { login.email: "Jhonmiguely3@gmail.com" }, projection: {}, limit: 1, singleBatch: true, batchSize: 1, lsid: { id: UUID("3cb77397-16c3-4d93-8bdc-9cefdfa8dfc8") }, $db: "test" }
+    /home/yepe/Desktop/anxebtest2/node_modules/mongodb/lib/cmap/connection.js:299:20
+
+04:05:07 pm / TestApi > Exception 8004 : Error procesado datos. not authorized on test to execute command { find: "Users", filter: { login.email: "Jhonmiguely3@gmail.com" }, projection: {}, limit: 1, singleBatch: true, batchSize: 1, lsid: { id: UUID("3cb77397-16c3-4d93-8bdc-9cefdfa8dfc8") }, $db: "test" }
+/home/yepe/Desktop/anxebtest2/node_modules/anxeb-mongoose/source/middleware/data.js:130:58
+  └╴Exception 13 : not authorized on test to execute command { find: "Users", filter: { login.email: "Jhonmiguely3@gmail.com" }, projection: {}, limit: 1, singleBatch: true, batchSize: 1, lsid: { id: UUID("3cb77397-16c3-4d93-8bdc-9cefdfa8dfc8") }, $db: "test" }
+    /home/yepe/Desktop/anxebtest2/node_modules/mongodb/lib/cmap/connection.js:299:20
+
+04:05:07 pm / TestApi > Exception 8004 : Error procesado datos. not authorized on test to execute command { find: "Users", filter: { login.email: "Jhonmiguely3@gmail.com" }, projection: {}, limit: 1, singleBatch: true, batchSize: 1, lsid: { id: UUID("3cb77397-16c3-4d93-8bdc-9cefdfa8dfc8") }, $db: "test" }
+/home/yepe/Desktop/anxebtest2/node_modules/anxeb-mongoose/source/middleware/data.js:130:58
+  └╴Exception 13 : not authorized on test to execute command { find: "Users", filter: { login.email: "Jhonmiguely3@gmail.com" }, projection: {}, limit: 1, singleBatch: true, batchSize: 1, lsid: { id: UUID("3cb77397-16c3-4d93-8bdc-9cefdfa8dfc8") }, $db: "test" }
+    /home/yepe/Desktop/anxebtest2/node_modules/mongodb/lib/cmap/connection.js:299:20
