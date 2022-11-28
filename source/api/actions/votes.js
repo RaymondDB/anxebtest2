@@ -1,4 +1,3 @@
-const fields = require('anxeb-mongoose/source/middleware/fields');
 const anxeb = require('anxeb-node');
 
 module.exports = {
@@ -6,12 +5,9 @@ module.exports = {
     access: anxeb.Route.access.public,
     timeout: 60000,
     methods: {
-        get: function (context) {
-           
-        },
         post: async function (context) {
             const Data = context.payload.Student;
-           VerifyData(context, Data);
+             VerifyData(context, Data);
             //insert it on mongo db
             let student = await context.data.upsert.Student();
             student.Matricula = Data.Matricula;
@@ -26,7 +22,7 @@ module.exports = {
         },
     }
 };
-async function VerifyData(context, data){
+async function VerifyData(context, Data){
     //veify structure
     if (!Data.Matricula || !Data.Curso || !Data.Votes) {
         context.log.exception.invalid_request.throw();
@@ -49,16 +45,24 @@ async function VerifyData(context, data){
     }
     //verify if the course exist A-G
     const LCurso =['A','B','C','D','E','F','G'];
-    if (!LCurso.includes(Data.Curso,Seccion)){
+    if (!LCurso.includes(Data.Curso.Seccion)){
         context.log.exception.invalid_request.args('Curso').include(
            { fields: [{name: 'Curso.Seccion', index: 1, Curso: Data.Curso.Seccion }]
     }).throw();
     }
     //verify if the vote is well formated
-    //check if the vote is a number
+    //check if the vote is a number and if its not, try to convert it to a number
+    Data.Votes.Voto=Number(Data.Votes.Voto);
+    console.log(Data);
     if (isNaN(Data.Votes.Voto)){
-        context.log.exception.invalid_request.args('Voto').include(
-           { fields: [{name: 'Voto', index: 1, Voto: Data.Votes.Voto }]
-    }).throw();
+        console.log('is not a number');
+        //string to number
+        Data.Votes.Voto = parseInt(Data.Votes.Voto);
+        console.log(Data.Votes.Vote);
+        if (isNaN(Data.Votes.Voto)){
+            context.log.exception.invalid_request.args('Vote').include(
+                { fields: [{msg:'Vote deberia ser un numero',name: 'Vote', index: 1, Vote: Data.Votes.Voto }]
+         }).throw();
+        }
     }
 }
