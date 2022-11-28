@@ -6,8 +6,10 @@ module.exports = {
     type: anxeb.Route.types.action,
     access: anxeb.Route.access.public,
     timeout: 60000,
+    url: '/auth',
     childs: {
         user: {
+            url: '/login',
             methods: {
                 post: async function (context) {
                     let credentials = context.payload;

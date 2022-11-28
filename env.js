@@ -18,7 +18,7 @@ module.exports = {
 		},*/
 		mongodb  : {
 			key : 'localhost',
-			uri          : `mongodb://${process.env.Mongo_Host}:${process.env.Mongo_Port}/${process.env.Mongo_DB}`,
+			uri          : `mongodb://root:2005@${process.env.Mongo_Host}:${process.env.Mongo_Port}/${process.env.Mongo_DB}`,
 			options      : {
 				user                        : process.env.Mongo_User,
 				pass                        : process.env.Mongo_Pass,

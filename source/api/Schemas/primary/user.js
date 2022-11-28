@@ -8,7 +8,7 @@ module.exports ={
     Schema: function(params){
         return new SchemaBuilder(params, 'User').build(function (req) {
     return {
-        id: fields.reference({ required: true }, 'User'),
+       // id: fields.reference({ required: true }, 'User'),
         name: fields.string({ required: true }),
         last_name: fields.string({ required: true }),
         login: new LoginSchema.Schema({ required: true, static: true  }),

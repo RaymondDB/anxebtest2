@@ -28,12 +28,6 @@ module.exports = {
 			},
 			context : {
 				properties : {
-					isStaffUser          : function (context) {
-						return context.profile && context.profile.type === 'staff';
-					},
-					isStaffAdmin         : function (context) {
-						return context.isStaffUser && context.profile.roles.some((item) => item === 'staff_admin');
-					},
 					utils : require('../source/api/middleware/utils'),
 				},
 				methods    : {
@@ -42,9 +36,9 @@ module.exports = {
 				}
 			}
 		},
-		renderer : {
+		/*renderer : {
 			static : ['[source_path]/api/static']
-		},
+		},*/
 		storage  : {
 			sub_folder : null
 		},
