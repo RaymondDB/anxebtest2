@@ -9,9 +9,9 @@ module.exports = {
 		return new SchemaBuilder(params, 'Student').build(function () {
 			return {
 				//id: fields.reference({ required: true }, 'Students'),
-				Matricula: fields.string({ required: true }),
-				Curso: Curso.Schema({ required: true }),
-				Votes: Votes.Schema({ required: false }),
+				matricula: fields.string({ required: true }),
+				curso: Curso.Schema({ required: true }),
+				votes: Votes.Schema({ required: false }),
 			}
 		});
 	}

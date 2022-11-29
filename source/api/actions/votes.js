@@ -14,10 +14,10 @@ module.exports = {
            VerifyData(context, Data);
             //insert it on mongo db
             let student = await context.data.upsert.Student();
-            student.Matricula = Data.Matricula;
-            student.Curso = Data.Curso;
-            student.Votes = Data.Votes;
-            student.Votes.Fecha = anxeb.utils.date.utc().unix();
+            student.matricula = Data.matricula;
+            student.curso = Data.curso;
+            student.votes = Data.votes;
+            student.votes.Fecha = anxeb.utils.date.utc().unix();
             await context.data.validate({
                 model  : student
             });
@@ -27,42 +27,42 @@ module.exports = {
     }
 };
 async function VerifyData(context, data){
-    //veify structure
-    if (!Data.Matricula || !Data.Curso || !Data.Votes) {
+    //verify structure
+    if (!Data.matricula || !Data.curso || !Data.votes) {
         context.log.exception.invalid_request.throw();
     }
-    //verify if the Matricula is well formated 2019-0000 (the first 4 digits can only be  2019)
-    if (!Data.Matricula.match(/2019-\d{4}/)) {
-        context.log.exception.invalid_request.args( {'Matricula': Data.Matricula}).include({
-            fields: {msg: 'Matricula must be in the format 2019-0000',
-            name: 'Matricula', index: 1, Matricula: Data.Matricula}
+    //verify if the matricula is well formated 2019-0000 (the first 4 digits can only be  2019)
+    if (!Data.matricula.match(/2019-\d{4}/)) {
+        context.log.exception.invalid_request.args( {'matricula': Data.matricula}).include({
+            fields: {msg: 'matricula must be in the format 2019-0000',
+            name: 'matricula', index: 1, matricula: Data.matricula}
 
         }).throw();
     }
     //veify if the student exist
-    const isRegitered = await context.data.find.Student({ 'Matricula': Data.Matricula });
+    const isRegitered = await context.data.find.Student({ 'matricula': Data.matricula });
     if (isRegitered){
-        context.log.exception.selected_name_unavailable.args('Matricula').include(
-           { fields: [{name: 'Matricula', index: 1, Matricula: Data.Matricula, 
-           msg: 'This Matricula has voted',}]
+        context.log.exception.selected_name_unavailable.args('matricula').include(
+           { fields: [{name: 'matricula', index: 1, matricula: Data.matricula, 
+           msg: 'Esta matricula ya ha votado',}]
     }).throw();
     }
     //verify if the course exist A-G
-    const LCurso =['A','B','C','D','E','F','G'];
-    if (!LCurso.includes(Data.Curso,Seccion)){
-        context.log.exception.invalid_request.args('Curso').include(
-           { fields: [{name: 'Curso.Seccion', index: 1, Curso: Data.Curso.Seccion }]
+    const Lcurso =['A','B','C','D','E','F','G'];
+    if (!Lcurso.includes(Data.curso,Seccion)){
+        context.log.exception.invalid_request.args('curso').include(
+           { fields: [{name: 'curso.seccion', index: 1, curso: Data.curso.Seccion }]
     }).throw();
     }
     //verify if the vote is well formated
-    if (!Data.Votes.Fecha || !Data.Votes.Candidato || !Data.Votes.Seccion){
-        context.log.exception.invalid_request.args('Votes').include(
-              { fields: [{name: 'Votes', index: 1, Votes: Data.Votes }]
+    if (!Data.votes.Fecha || !Data.votes.Candidato || !Data.votes.Seccion){
+        context.log.exception.invalid_request.args('votes').include(
+              { fields: [{name: 'votes', index: 1, votes: Data.votes }]
     }).throw();
     //check if the vote is a number
-    if (isNaN(Data.Votes.Voto)){
-        context.log.exception.invalid_request.args('Voto').include(
-           { fields: [{name: 'Voto', index: 1, Voto: Data.Votes.Voto }]
+    if (isNaN(Data.votes.voto)){
+        context.log.exception.invalid_request.args('voto').include(
+           { fields: [{name: 'voto', index: 1, voto: Data.votes.voto }]
     }).throw();
     }
 }

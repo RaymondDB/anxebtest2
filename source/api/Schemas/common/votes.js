@@ -7,9 +7,9 @@ module.exports = {
 	Schema : function (params) {
 		return new SchemaBuilder(params).build(function (required) {
 			return {
-				State: fields.string({ required: required(0) }),
-				Fecha: fields.date({ required: required(1) }),
-				Voto: fields.number({ required: required(1) })
+				state: fields.string({ required: required(0) }),
+				fecha: fields.date({ required: required(1) }),
+				voto: fields.number({ required: required(1) })
 			};
 		});
 	}
