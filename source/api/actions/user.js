@@ -7,12 +7,16 @@ module.exports = {
     url: '/users',
     type: anxeb.Route.types.action,
     access: anxeb.Route.access.private,
-    //owners: ['staff', 'user'],
-  //  roles: ['staff_admin'],
+    owners: '*',
+    roles: '*',
     timeout: 60000,
     methods: {
         get: async function (context) {
-            return;
+            context.data.find.User().then(function (users) {
+                context.send(users);
+            }).catch(function (error) {
+                context.log.exception.server_error.throw(error);
+            });
         },
         post: async function (context) {
             let user = context.payload.user;

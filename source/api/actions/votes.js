@@ -1,9 +1,8 @@
 const fields = require('anxeb-mongoose/source/middleware/fields');
 const anxeb = require('anxeb-node');
-
 module.exports = {
     url: '/vote',
-    access: anxeb.Route.access.public,
+    access: anxeb.Route.access.private,
     timeout: 60000,
     methods: {
         get: function (context) {
@@ -44,18 +43,18 @@ async function VerifyData(context, data){
     if (isRegitered){
         context.log.exception.selected_name_unavailable.args('matricula').include(
            { fields: [{name: 'matricula', index: 1, matricula: Data.matricula, 
-           msg: 'Esta matricula ya ha votado',}]
+           msg: 'Esta matricula ya ha votado'}]
     }).throw();
     }
     //verify if the course exist A-G
     const Lcurso =['A','B','C','D','E','F','G'];
-    if (!Lcurso.includes(Data.curso,Seccion)){
+    if (!Lcurso.includes(Data.curso.seccion)){
         context.log.exception.invalid_request.args('curso').include(
-           { fields: [{name: 'curso.seccion', index: 1, curso: Data.curso.Seccion }]
+           { fields: [{name: 'curso.seccion', index: 1, curso: Data.curso.seccion }]
     }).throw();
     }
     //verify if the vote is well formated
-    if (!Data.votes.Fecha || !Data.votes.Candidato || !Data.votes.Seccion){
+    if (!Data.votes.fecha || !Data.votes.vote || !Data.votes.seccion){
         context.log.exception.invalid_request.args('votes').include(
               { fields: [{name: 'votes', index: 1, votes: Data.votes }]
     }).throw();

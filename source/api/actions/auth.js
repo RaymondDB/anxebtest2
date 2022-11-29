@@ -8,7 +8,7 @@ module.exports = {
     timeout: 60000,
     url: '/auth',
     childs: {
-        user: {
+        login: {
             url: '/login',
             methods: {
                 post: async function (context) {
@@ -17,7 +17,6 @@ module.exports = {
                     //TODO: Validate email regex || sanitize email for injection
                     if (!email || !credentials.password) {
                         context.log.exception.invalid_request.throw();
-                        return;
                     }
                     let user = await getUserData({
                         context: context,
@@ -33,177 +32,178 @@ module.exports = {
                         context.log.exception.invalid_credentials.throw({ silent: true });
                         return;
                     }
-
-                    if (login.state === 'inactive') {
+                    if (user.login.state === 'inactive') {
                         context.log.exception.inactive_user.throw();
                         return;
                     }
 
-                    if (login.state === 'removed') {
+                    if (user.login.state === 'removed') {
                         context.log.exception.removed_user.throw();
                         return;
                     }
-                    sendAuthResponse({ context, email })
-
+                    sendAuthResponse({ context, user });
                 }
-            }
-        }
-    },
-    renew: {
-        access: anxeb.Route.access.private,
-        owners: '*',
-        roles: '*',
-        methods: {
-            post: async function (context) {
-                let body = context.bearer.auth.body;
-
-                let user = await getUserData({
-                    context: context,
-                    id: ObjectId(body.identity)
-                });
-
-                if (user == null) {
-                    context.log.exception.user_not_found.throw(context);
-                }
-
-
-                if (user.login.state === 'inactive') {
-                    context.log.exception.inactive_user.throw();
-                }
-
-                if (user.login.state === 'removed') {
-                    context.log.exception.removed_user.throw();
-                }
-
-                await sendAuthResponse({
-                    context: context,
-                    user: user
-                });
-            }
-        }
-    },
-    language: {
-        access: anxeb.Route.access.private,
-        owners: '*',
-        roles: '*',
-        methods: {
-            post: async function (context) {
-                let body = context.bearer.auth.body;
-
-                let user = await getUserData({
-                    context: context,
-                    id: ObjectId(body.identity)
-                });
-
-                if (user == null) {
-                    context.log.exception.user_not_found.throw(context);
-                }
-
-                if (user.login.state === 'inactive') {
-                    context.log.exception.inactive_user.throw();
-                }
-
-                if (user.login.state === 'removed') {
-                    context.log.exception.removed_user.throw();
-                }
-
-                if (context.payload.language == null || context.payload.language.length === 2) {
-                    user.info = user.info || {};
-                    user.info.language = context.payload.code;
-                    user.markModified('info');
-                    user.persist();
-                    context.ok();
-                } else {
-                    context.log.exception.invalid_request.throw();
-                }
-            }
-        }
-    },
-    close: {
-        owners: '*',
-        roles: '*',
-        methods: {
-            post: async function (context) {
-                let body = context.bearer.auth.body;
-                let user = await getUserData({
-                    context: context,
-                    id: ObjectId(body.identity)
-                });
-
-                if (user.login.token != null) {
-                    user.login.token = null;
-                    user.persist();
-                }
-                context.ok();
-            }
-        }
-    },
-    tokenize: {
-        access: anxeb.Route.access.private,
-        owners: '*',
-        roles: '*',
-        methods: {
-            post: async function (context) {
-                let body = context.bearer.auth.body;
-
-                let user = await getUserData({
-                    context: context,
-                    id: ObjectId(body.identity)
-                });
-
-                if (user == null) {
-                    context.log.exception.user_not_found.throw(context);
-                }
-
-                if (user.login.state === 'inactive') {
-                    context.log.exception.inactive_user.throw();
-                }
-
-                if (user.login.state === 'removed') {
-                    context.log.exception.removed_user.throw();
-                }
-
-                if (context.payload.token == null || context.payload.token === '') {
-                    user.login.token = null;
-                } else {
-                    user.login.token = context.payload.token;
-                }
-                user.persist();
-                context.ok();
-
-            }
-        }
-    },
-    remove: {
-        access: anxeb.Route.access.private,
-        owners: '*',
-        roles: '*',
-        methods: {
-            post: async function (context) {
-                let email = context.payload.email;
-
-                if (email === null) {
-                    context.log.exception.invalid_request.throw(context);
-                }
-
-                let user = await context.data.find.User({
-                    _id: ObjectId(context.payload.id),
-                    'login.email': email
-                });
-
-                if (user == null || !user._id.equals(context.bearer.auth.body.identity)) {
-                    context.log.exception.user_not_found.throw(context);
-                }
-
-                user.login.state = 'removed';
-                user.login.token = null;
-                await user.persist();
-
-                context.ok();
             }
         }
     }
 }
+/*
+renew: {
+    access: anxeb.Route.access.private,
+    owners: '*',
+    roles: '*',
+    methods: {
+        post: async function (context) {
+            let body = context.bearer.auth.body;
+
+            let user = await getUserData({
+                context: context,
+                id: ObjectId(body.identity)
+            });
+
+            if (user == null) {
+                context.log.exception.user_not_found.throw(context);
+            }
+
+
+            if (user.login.state === 'inactive') {
+                context.log.exception.inactive_user.throw();
+            }
+
+            if (user.login.state === 'removed') {
+                context.log.exception.removed_user.throw();
+            }
+
+            await sendAuthResponse({
+                context: context,
+                user: user
+            });
+        }
+    }
+},
+language: {
+    access: anxeb.Route.access.private,
+    owners: '*',
+    roles: '*',
+    methods: {
+        post: async function (context) {
+            let body = context.bearer.auth.body;
+
+            let user = await getUserData({
+                context: context,
+                id: ObjectId(body.identity)
+            });
+
+            if (user == null) {
+                context.log.exception.user_not_found.throw(context);
+            }
+
+            if (user.login.state === 'inactive') {
+                context.log.exception.inactive_user.throw();
+            }
+
+            if (user.login.state === 'removed') {
+                context.log.exception.removed_user.throw();
+            }
+
+            if (context.payload.language == null || context.payload.language.length === 2) {
+                user.info = user.info || {};
+                user.info.language = context.payload.code;
+                user.markModified('info');
+                user.persist();
+                context.ok();
+            } else {
+                context.log.exception.invalid_request.throw();
+            }
+        }
+    }
+},
+close: {
+    owners: '*',
+    roles: '*',
+    methods: {
+        post: async function (context) {
+            let body = context.bearer.auth.body;
+            let user = await getUserData({
+                context: context,
+                id: ObjectId(body.identity)
+            });
+
+            if (user.login.token != null) {
+                user.login.token = null;
+                user.persist();
+            }
+            context.ok();
+        }
+    }
+},
+tokenize: {
+    access: anxeb.Route.access.private,
+    owners: '*',
+    roles: '*',
+    methods: {
+        post: async function (context) {
+            let body = context.bearer.auth.body;
+
+            let user = await getUserData({
+                context: context,
+                id: ObjectId(body.identity)
+            });
+
+            if (user == null) {
+                context.log.exception.user_not_found.throw(context);
+            }
+
+            if (user.login.state === 'inactive') {
+                context.log.exception.inactive_user.throw();
+            }
+
+            if (user.login.state === 'removed') {
+                context.log.exception.removed_user.throw();
+            }
+
+            if (context.payload.token == null || context.payload.token === '') {
+                user.login.token = null;
+            } else {
+                user.login.token = context.payload.token;
+            }
+            user.persist();
+            context.ok();
+
+        }
+    }
+},
+remove: {
+    access: anxeb.Route.access.private,
+    owners: '*',
+    roles: '*',
+    methods: {
+        post: async function (context) {
+            let email = context.payload.email;
+
+            if (email === null) {
+                context.log.exception.invalid_request.throw(context);
+            }
+
+            let user = await context.data.find.User({
+                _id: ObjectId(context.payload.id),
+                'login.email': email
+            });
+
+            if (user == null || !user._id.equals(context.bearer.auth.body.identity)) {
+                context.log.exception.user_not_found.throw(context);
+            }
+
+            user.login.state = 'removed';
+            user.login.token = null;
+            await user.persist();
+
+            context.ok();
+        }
+    }
+}
+}
+*/
 const getUserData = async function (params) {
     let context = params.context;
     let query = {};
@@ -227,9 +227,7 @@ const sendAuthResponse = async function (params) {
     if (params.changes) {
         params.changes(user);
     }
-
     let $user = params.user.toClient();
-
     params.context.data.retrieve.User(user._id || user.id).then(function (user) {
         user.login.date = anxeb.utils.date.utc().unix();
         if (params.changes) {
@@ -245,8 +243,8 @@ const sendAuthResponse = async function (params) {
         token: context.sign({
             user: {
                 id: $user.id,
-                first_names: $user.first_names,
-                last_names: $user.last_names,
+                name: $user.name,
+                last_name: $user.last_name,
                 email: $user.login.email,
                 info: $user.info,
                 type: $user.type,

@@ -1,3 +1,5 @@
+bun.lockb
+user.json
 logs/
 node_modules/
 *.env

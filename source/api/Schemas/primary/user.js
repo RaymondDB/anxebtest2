@@ -13,7 +13,7 @@ module.exports ={
         last_name: fields.string({ required: true }),
         login: new LoginSchema.Schema({ required: true, static: true  }),
         type: fields.enum({ required: true }, ['admin', 'user', 'staff']),
-        date: fields.number(),
+        date: fields.date(),
         meta: fields.mixed(),
 		phone: fields.string(),
         identity: new Identity.Schema({ required: true, static: true }),
@@ -21,7 +21,6 @@ module.exports ={
         });
 }
 }
-
 /*module.exports = {
 	Schema : function (params) {
 		return new SchemaBuilder(params, 'User').build(function (required) {
