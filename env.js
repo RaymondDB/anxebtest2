@@ -9,13 +9,13 @@ module.exports = {
 				exposedHeaders : ['table-row-count', 'current-location']
 			}
 		},
-		/*security : {
+		security : {
 			keys : {
 				private    : '/development.rsa',
 				public     : '/development.pem',
 				expiration : 80000
 			}
-		},*/
+		},
 		mongodb  : {
 			key : 'localhost',
 			uri          : `mongodb://root:2005@${process.env.Mongo_Host}:${process.env.Mongo_Port}/${process.env.Mongo_DB}`,

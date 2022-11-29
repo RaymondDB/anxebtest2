@@ -8,7 +8,7 @@ let server = new Server({
 	description : 'Testing',
 	remark      : {
 		key      : 'Running Environment',
-		value    : process.env.NODE_ENV === 'production' ? 'Production Release' : 'Developemnt',
+		value    : process.env.NODE_ENV === 'production' ? 'Production Release' : 'Developement',
 		asterisk : process.env.NODE_ENV === 'production'
 	},
 	key         : 'main',

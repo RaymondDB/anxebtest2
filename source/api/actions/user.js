@@ -7,30 +7,16 @@ module.exports = {
     url: '/users',
     type: anxeb.Route.types.action,
     access: anxeb.Route.access.private,
-    owners: ['staff', 'user'],
-    roles: ['staff_admin'],
+    //owners: ['staff', 'user'],
+  //  roles: ['staff_admin'],
     timeout: 60000,
     methods: {
         get: async function (context) {
-            let query = common.query.build(context, {}, ['first_name', 'last_name', 'phone', 'identity.number', 'login.email']);
-            let populate = ['owner.entity'];
-
-            if (context.query.tenant) {
-                query['owner.type'] = 'Tenant';
-                query['owner.entity'] = ObjectId(context.query.tenant);
-            } else {
-                if (context.query.staff) {
-                    query.owner = null;
-                }
-            }
-
-            let users = await context.data.list.User(query, populate);
-            context.send(users.toClient());
+            return;
         },
         post: async function (context) {
             let user = context.payload.user;
             let password = $user.login.password ? md5($user.login.password.trim().toLowerCase()) : null;
-
             if (user.login.email != null) {
                 let rep_email = await context.data.find.User({ 'login.email': user.login.email });
                 if (rep_email && !rep_email._id.equals(user.id)) {
@@ -47,15 +33,6 @@ module.exports = {
                 }).throw(context);
                 return;
             }
-
-            if ($user.owner && $user.owner.type) {
-                if ($user.owner.entity == null) {
-                    context.log.exception.data_validation_exception.include({
-                        fields: [{ name: 'owner.entity', index: 1 }]
-                    }).throw(context);
-                    return;
-                }
-            }
             let dbuser = await context.data.upsert.User(user.id);
             user.first_names = user.first_names;
             user.last_names = user.last_names;
@@ -65,56 +42,17 @@ module.exports = {
             user.login.password = password || dbuser.login.password;
             user.login.provider = password != null || !$user.id ? 'email' : dbuser.login.provider;
             user.login.state = (user.login.state ? $user.login.state : dbuser.login.state) || 'active';
-            if (context.isStaffAdmin) {
+           /* if (context.isStaffAdmin) {
                 user.owner = user.owner != null && user.owner.type != null && user.owner.entity != null ? user.owner : null;
                 user.type = (user.type ? user.type : dbuser.type) || 'staff';
             } else {
                 context.log.exception.access_denied.throw(context);
-            }
-
+            }*/
             await context.audit(dbuser);
             if (dbuser.isNew) {
                 dbuser.created = anxeb.utils.date.utc().unix();
-                let $permit = context.payload.permit;
-                if ($permit) {
-                    let permit = await context.data.create.Permit({
-                        state: $permit.state,
-                        user: dbuser._id,
-                        type: $permit.type,
-                        entity: $permit.entity,
-                        roles: $permit.roles,
-                        flags: {
-                            validity: null,
-                            expirity: null
-                        },
-                        meta: null,
-                    });
-
-                    if (context.isTenantAdmin) {
-                        if ($permit.type === 'Tenant') {
-                            permit.type = 'Tenant';
-                            permit.entity = context.facility;
-                        }
-                    }
-
-                    await context.audit(permit);
-
-                    await context.data.validate({
-                        model: dbuser,
-                        permit: permit
-                    });
-
-                    await permit.verify(context);
-                    await permit.persist();
-                }
             }
             await user.persist();
-            await context.utils.storeImages({
-                payload: context.payload.images,
-                id: dbuser._id,
-                root: 'avatars',
-                allow: ['avatar'],
-            });
             context.send(user.toClient());
         }
 
@@ -155,4 +93,17 @@ module.exports = {
             }
         }
     }
+}
+const getUser = async function (params) {
+    let context = params.context;
+    let query = {};
+
+    if (params.email != null) {
+        query['login.email'] = params.email;
+    } else if (params.id != null) {
+        query._id = params.id;
+    } else {
+        return null;
+    }
+    return await context.data.find.User(query);
 }

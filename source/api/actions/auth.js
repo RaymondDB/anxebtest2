@@ -239,15 +239,8 @@ const sendAuthResponse = async function (params) {
     }).catch(function (err) { });
 
     //TODO: Fix Permissions
-    let $roles = ['staff_admin'];
-
-    if (context.query.only != null) {
-        $roles = $roles.filter((item) => item.startsWith(context.query.only));
-    }
-
     context.send({
         user: $user,
-        roles: $roles,
         provider: $user.login.provider,
         token: context.sign({
             user: {
@@ -259,8 +252,6 @@ const sendAuthResponse = async function (params) {
                 type: $user.type,
             },
             identity: $user.id,
-            claims: [{ path: '/anxeb/container/*', method: 'GET' },],
-            roles: $roles,
             type: $user.type,
         })
     });
