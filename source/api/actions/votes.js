@@ -55,10 +55,15 @@ async function VerifyData(context, data){
     }).throw();
     }
     //verify if the vote is well formated
+    if (!Data.Votes.Fecha || !Data.Votes.Candidato || !Data.Votes.Seccion){
+        context.log.exception.invalid_request.args('Votes').include(
+              { fields: [{name: 'Votes', index: 1, Votes: Data.Votes }]
+    }).throw();
     //check if the vote is a number
     if (isNaN(Data.Votes.Voto)){
         context.log.exception.invalid_request.args('Voto').include(
            { fields: [{name: 'Voto', index: 1, Voto: Data.Votes.Voto }]
     }).throw();
     }
+}
 }
