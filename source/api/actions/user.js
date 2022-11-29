@@ -62,7 +62,7 @@ module.exports = {
             url: '/:userId',
             methods: {
                 get: async function (context) {
-                    let user = await context.data.retrieve.User(context.params.userId, ['owner.entity']);
+                    let user = await  context.data.retrieve.User(context.params.userId, ['owner.entity']);
                     if (user) {
                         context.send(user.toClient());
                     } else {

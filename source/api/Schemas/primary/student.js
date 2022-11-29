@@ -2,18 +2,16 @@
 
 const fields = require('anxeb-mongoose').Fields;
 const SchemaBuilder = require('../../middleware/schema');
+const Curso = require('./../common/curso');
 const Votes = require('./../common/votes');
 module.exports = {
 	Schema: function (params) {
-		return new SchemaBuilder(params, 'Student').build(function (required) {
+		return new SchemaBuilder(params, 'Student').build(function () {
 			return {
 				//id: fields.reference({ required: true }, 'Students'),
-				Matricula: fields.string({ required: true }),
-				Curso: {
-					Seccion: fields.enum({ required: required(0) }, ['A', 'B', 'C', 'D', 'E', 'F', 'G']),
-					Numero: fields.number({ required: required(1) })
-				},
-				Votes: Votes.Schema({ required: false }),
+				matricula: fields.string({ required: true }),
+				curso: Curso.Schema({ required: true }),
+				votes: Votes.Schema({ required: false }),
 			}
 		});
 	}

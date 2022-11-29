@@ -7,8 +7,8 @@ module.exports = {
 	Schema : function (params) {
 		return new SchemaBuilder(params).build(function (required) {
 			return {
-			Seccion: fields.enum({ required: required(0)}, ['A', 'B', 'C', 'D', 'E', 'F', 'G']),
-			Numero: fields.number({ required: required(1) })
+			seccion: fields.enum({ required: required(0)}, ['A', 'B', 'C', 'D', 'E', 'F', 'G']),
+			numero: fields.number({ required: required(1) })
 			};
 		});
 	}
